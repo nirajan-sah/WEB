@@ -1,0 +1,35 @@
+div.blue1 {width:100px;height:200px;background-color:blue;
+    border-style:double;
+    position:relative;left:0%;top:0px;}
+div.yellow1 {width:94px;height:30px;background-color:yellow;
+    border-style:double;
+    position:relative;left:107px;top:-208px;}
+div.red1 {width:100px;height:30px;background-color:red;
+    border-style:double;
+    position:relative;left:207px;top: -245px;}
+div.green1 {width:200px;height:163px;background-color:green;
+    border-style: double;
+    position:relative;left:107px;top:-245px;}
+
+div.blank
+{
+    width:99px;
+    height:50px;
+    border-style: double;
+    position: relative;left: 208px; top:115px;
+    
+}
+div.blank1
+{
+    width:94px;
+    height:50px;
+    border-style: double;
+    position: relative;left: 107px; top: 57px;
+}
+div.blank2
+{
+    width:100px;
+    height:50px;
+    border-style: double;
+    position: relative;
+}
