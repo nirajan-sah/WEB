@@ -41,7 +41,7 @@
     min-height: 400px;          /* Demonstration height, optional */
   }
   
-  nav ul {
+  nav ul{
     list-style-type: none;
   }
   
@@ -59,12 +59,10 @@
     text-decoration: underline;
   }
   
-  /* Main content area */
-  main {
-    overflow: auto; /* Ensures proper wrapping of floated elements */
-    /* Alternatively, you could set margin-left if you prefer an absolute or floated layout */
-  }
   
+  main ol{
+    list-style-type: circle;
+  }
   /* Example image styling: float the pirate image to the right with some margin */
   main img {
     float: right;
@@ -73,6 +71,9 @@
     max-width: 200px; /* Constrain the image size if needed */
   }
   
+  address{
+    margin: 50px;
+  }
   /* Footer styling */
   footer {
     clear: both;
