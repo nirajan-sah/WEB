@@ -7,24 +7,23 @@
   
   /* Overall page style */
   body {
-    font-family: Arial, sans-serif;
-    background-color: #257ab4; /* A light brown/tan background */
-    color: #000;
+    font-family: verdana;
+    background-color: #00BFFF; /* A light brown/tan background */
+    color: #330000;
   }
   
   /* Container to center the page content */
   #container {
     width: 900px;           /* Adjust to suit your design */
     margin: 0 auto;         /* Centers the container */
-    background-color: #f5deb3; /* Lighter background for the content area (Wheat) */
+    background-color: #E8D882; /* Lighter background for the content area (Wheat) */
     padding: 10px;
     min-height: 600px;      /* Just to demonstrate height, optional */
   }
   
   /* Header styling */
   header {
-    background-color: #aa6219; /* Dark brown */
-    color: #ffffff;
+    background-color: #ccaa66 ; /* Dark brown */
     padding: 20px;
     text-align: center;
     font-size: 2em;
@@ -59,6 +58,10 @@
     text-decoration: underline;
   }
   
+  main{
+    display: inline;
+    background-color: #f1e8b0;
+  }
   
   main ol{
     list-style-type: circle;
@@ -66,16 +69,19 @@
   /* Example image styling: float the pirate image to the right with some margin */
   main img {
     float: right;
+    background-repeat: no-repeat;
     margin-left: 10px;
     margin-bottom: 10px;
-    max-width: 200px; /* Constrain the image size if needed */
+    max-width: 150px; /* Constrain the image size if needed */
   }
   
   address{
     margin: 50px;
+    position: relative;
   }
   /* Footer styling */
   footer {
+    position: relative;
     clear: both;
     background-color: #9f560e;
     color: #ffffff;
