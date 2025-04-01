@@ -47,23 +47,7 @@ body {
   #navbar li:hover{
       color: rgb(96, 78, 78);
   }
-  
-  #navbar li a:hover,
-  #navbar li a.active{
-      color: white;
-  }
-  
-  #navbar li a.active::after,
-  #navbar li a:hover::after{
-      content: "";
-      width: 20%;
-      height: 2px;
-      background: white;
-      position: absolute;
-      bottom: -4px;
-      left: 30px;
-  
-  }
+
 
 #hfour{
     margin-left: 30px;
@@ -130,60 +114,35 @@ body {
     font-size: 14px;
     font-style: italic;
 }
+
 #footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
   
-  #footer .col{
+#footer .col{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 20px;
+    position: absolute;
   }
   
-  #footer h4{
+#footer h4{
     font-size: 14px;
     padding-bottom: 20px;
   }
   
-  #footer p{
+#footer p{
     font-size: 13px;
     margin: 0 0 8px 0;
   }
   
-  #footer a {
+#footer a {
     font-size: 13px;
     text-decoration: none;
     color: #222;
     margin-bottom: 10px;
   }
   
-  #footer .follow{
-    margin-top: 20px;
-  }
-  
-  #footer .follow i{
-    color: #465b52;
-    padding-right: 4px;
-    cursor: pointer;
-  }
-  
-  #footer .install .row img{
-    border: 1px solid #088178;
-    border-radius: 6px;
-  }
-  
-  #footer .install img {
-    margin: 10px 0 15px 0;
-  }
-  
-  #footer .follow i:hover,
-  footer a:hover{
-    color: #088178;
-  }
-
-  .section-p1 {
-    padding: 40px 100px;
-  }
