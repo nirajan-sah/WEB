@@ -115,34 +115,31 @@ body {
     font-style: italic;
 }
 
-#footer{
+footer {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-#footer .col{
+    justify-content: space-around;
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+
+footer .col {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 20px;
-    position: absolute;
-  }
-  
-#footer h4{
-    font-size: 14px;
-    padding-bottom: 20px;
-  }
-  
-#footer p{
-    font-size: 13px;
-    margin: 0 0 8px 0;
-  }
-  
-#footer a {
-    font-size: 13px;
-    text-decoration: none;
-    color: #222;
+}
+
+footer .col h4 {
     margin-bottom: 10px;
-  }
+}
+
+footer .col a {
+    text-decoration: none;
+    color: #bbb;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+footer .col a:hover {
+    color: white;
+}
   

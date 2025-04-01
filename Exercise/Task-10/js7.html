@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Table</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        th {
+            background-color: #4A8491;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<table id="myTable">
+    <tr>
+        <th>S.N.</th>
+        <th>Name</th>
+        <th>Image</th>
+    </tr>
+</table>
+
+<script>
+    let table = document.getElementById("myTable");
+
+    for (let i = 1; i <= 4; i++) {
+        let row = table.insertRow();
+        row.style.backgroundColor = (i % 2 === 0) ? "#E2E8EA" : "#F9F9F9"; // Alternate row color
+
+        row.insertCell(0).innerHTML = i;
+        row.insertCell(1).innerHTML = "Name " + i;
+        row.insertCell(2).innerHTML = '<img src="' + i + '.jpg" width="50">';
+    }
+</script>
+
+</body>
+</html>
