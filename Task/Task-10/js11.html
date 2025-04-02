@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add & Display Items</title>
+    <script>
+        // Initialize an empty array
+        let itemsArray = [];
+
+        // Function to add item to the array
+        function add_item_to_array() {
+            // Get the value from the input field
+            let newItem = document.getElementById("itemInput").value;
+            
+            // Only add if it's not an empty string
+            if (newItem.trim() !== "") {
+                itemsArray.push(newItem);
+            }
+            
+            // Clear the input field
+            document.getElementById("itemInput").value = "";
+        }
+
+        // Function to display all items in the array
+        function display_array() {
+            // Get the display div
+            let displayDiv = document.getElementById("displayArea");
+            // Clear any previous content
+            displayDiv.innerHTML = "";
+
+            // Loop through the array and display each item with its index
+            for (let i = 0; i < itemsArray.length; i++) {
+                displayDiv.innerHTML += "Element " + i + " = " + itemsArray[i] + "<br>";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Add Items to an Array</h2>
+    <input type="text" id="itemInput" placeholder="Enter an item">
+    <button onclick="add_item_to_array()">Add</button>
+    <button onclick="display_array()">Display</button>
+    
+    <div id="displayArea" style="margin-top: 1em;"></div>
+</body>
+</html>
